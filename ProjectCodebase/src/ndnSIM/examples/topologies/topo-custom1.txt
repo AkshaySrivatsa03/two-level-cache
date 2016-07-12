@@ -1,0 +1,20 @@
+# topo-tree.txt
+
+#	/--------\	   /--------\	     /--------------\	
+#	| client |---------| cache1 |--------| OriginServer |
+#       \--------/         \--------/	     \--------------/
+#
+
+router
+
+#node		y	x
+client		10	-20
+cache1		10	0	
+originServer	10	20	
+
+link
+
+# from	    	to		capacity	metric	delay	queue
+client		cache1		10Mbps		1	10ms	10
+cache1		originServer	10Mbps		1	10ms	10
+

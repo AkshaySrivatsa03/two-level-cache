@@ -1,0 +1,43 @@
+Steps taken to replace LRU policy -
+
+In ns-3/src/ndnSIM/NFD/daemon/fw
+	1. Replace forwarder.cpp
+	2. Replace forwarder.hpp
+	3. Add forwarder.cpp-decisionpolicy
+	4. Add forwarder.hpp-decisionpolicy
+	5. Add forwarder.hpp-orig
+	6. Add forwarder.cpp-orig
+
+In ns-3/src/ndnSIM/ndn-cxx/src
+	1. Replace data.cpp
+	2. Replace data.cpp-orig
+	3. Replace data.hpp
+	4. Replace data.hpp-orig
+
+In ns-3/src/ndnSIM/utils
+	1. Add ndn-consumer-hop-distance-tag.cpp
+	2. Add ndn-consumer-hop-distance-tag.hpp
+	3. Replace ndn-ns3-packet-tag.hpp
+
+In ns-3/src/ndnSIM/NFD/daemon/table
+	1. Replace cs.cpp
+	2. Replace cs.hpp
+	3. Add cs-consumer-closest-decision-policy.cpp
+	4. Add cs-consumer-closest-decision-policy.hpp
+	5. Add cs-decision-policy.hpp
+	6. Replace cs-policy.cpp
+	7. Replace cs-policy.hpp
+	8. Replace cs-policy-lru.cpp
+	9. Replace cs-policy-lru.hpp
+	10. Replace cs-policy-priority-fifo.cpp
+	11. Add cs-policy-probcacheext.cpp
+	12. Add cs-policy-probcacheext.hpp
+	13. Add cs-probcache-decision-policy.cpp
+	14. Add cs-probcache-decision-policy.hpp
+	15. Add cs-uniform-decision-policy.cpp
+	16. Add cs-uniform-decision-policy.hpp
+	17. Replace name-tree.cpp
+	18. Add prob-based-caching-calc.cpp
+	19. Add prob-based-caching-calc.hpp
+	20. Replace probext-data-info.cpp
+	21. Replace probext-data-info.hpp
