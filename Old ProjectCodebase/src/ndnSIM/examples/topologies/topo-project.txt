@@ -1,0 +1,64 @@
+# topo-tree.txt
+# 15 caches 8 clients 1 Origin Server  
+
+
+#	/--------\	   /--------\	     /--------------\	
+#	| client |---------| cache1 |--------| OriginServer |
+#       \--------/         \--------/	     \--------------/
+#
+
+router
+
+#node		y	x
+client8		90	60
+client7		90	35
+client6		90	30
+client5		90	10
+client4		90	-10
+client3		90	-30
+client2		90	-35
+client1		90	-60
+cache15		80	60
+cache14		80	35
+cache13		80	30
+cache12		80	10
+cache11		80	-10
+cache10		80	-30
+cache9		80	-35
+cache8		80	-60
+cache7		60	40
+cache6		60	15
+cache5		60	-15
+cache4		60	-40
+cache3		40	20
+cache2		40	-20
+cache1		20	0	
+originServer	0	0	
+
+link
+
+# from	    	to		capacity	metric	delay	queue
+client1		cache8		10Mbps		1	10ms	10
+client2		cache9		10Mbps		1	10ms	10
+client3		cache10		10Mbps		1	10ms	10
+client4		cache11		10Mbps		1	10ms	10
+client5		cache12		10Mbps		1	10ms	10
+client6		cache13		10Mbps		1	10ms	10
+client7		cache14		10Mbps		1	10ms	10
+client8		cache15		10Mbps		1	10ms	10
+cache8		cache4   	10Mbps		1	10ms	10
+cache9		cache4   	10Mbps		1	10ms	10
+cache10		cache5   	10Mbps		1	10ms	10
+cache11		cache5   	10Mbps		1	10ms	10
+cache12		cache6   	10Mbps		1	10ms	10
+cache13		cache6   	10Mbps		1	10ms	10
+cache14		cache7   	10Mbps		1	10ms	10
+cache15		cache7   	10Mbps		1	10ms	10
+cache4		cache2   	10Mbps		1	10ms	10
+cache5		cache2   	10Mbps		1	10ms	10
+cache6		cache3   	10Mbps		1	10ms	10
+cache7		cache3   	10Mbps		1	10ms	10
+cache2		cache1   	10Mbps		1	10ms	10
+cache3		cache1   	10Mbps		1	10ms	10
+cache1		originServer   	10Mbps		1	10ms	10
+

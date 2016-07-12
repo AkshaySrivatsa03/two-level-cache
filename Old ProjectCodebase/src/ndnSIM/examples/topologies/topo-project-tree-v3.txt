@@ -1,0 +1,432 @@
+# topo-tree.txt
+# 15 caches 8 clients 1 Origin Server  
+
+
+#	/--------\	   /--------\	     /--------------\	
+#	| client |---------| cache1 |--------| OriginServer |
+#       \--------/         \--------/	     \--------------/
+#
+
+router
+
+#node		y	x
+client200	120	-100
+client199	120	-99
+client198	120	-98
+client197	120	-97
+client196	120	-96
+client195	120	-95
+client194	120	-94
+client193	120	-93
+client192	120	-92
+client191	120	-91
+client190	120	-90
+client189	120	-89
+client188	120	-88
+client187	120	-87
+client186	120	-86
+client185	120	-85
+client184	120	-84
+client183	120	-83
+client182	120	-82
+client181	120	-81
+client180	120	-80
+client179	120	-79
+client178	120	-78
+client177	120	-77
+client176	120	-76
+client175	120	-75
+client174	120	-74
+client173	120	-73
+client172	120	-72
+client171	120	-71
+client170	120	-70
+client169	120	-69	
+client168	120	-68
+client167	120	-67
+client166	120	-66
+client165	120	-65
+client164	120	-64
+client163	120	-63
+client162	120	-62
+client161	120	-61
+client160	120	-60
+client159	120	-59
+client158	120	-58
+client157	120	-57
+client156	120	-56
+client155	120	-55
+client154	120	-54
+client153	120	-53
+client152	120	-52
+client151	120	-51
+client150	120	-50
+client149	120	-49
+client148	120	-48
+client147	120	-47
+client146	120	-46
+client145	120	-45
+client144	120	-44
+client143	120	-43
+client142	120	-42
+client141	120	-41
+client140	120	-40
+client139	120	-39
+client138	120	-38
+client137	120	-37
+client136	120	-36
+client135	120	-35
+client134	120	-34
+client133	120	-33
+client132	120	-32
+client131	120	-31
+client130	120	-30
+client129	120	-29
+client128	120	-28
+client127	120	-27
+client126	120	-26
+client125	120	-25
+client124	120	-24
+client123	120	-23
+client122	120	-22
+client121	120	-21
+client120	120	-20
+client119	120	-19
+client118	120	-18
+client117	120	-17
+client116	120	-16
+client115	120	-15
+client114	120	-14
+client113	120	-13
+client112	120	-12
+client111	120	-11
+client110	120	-10
+client109	120	-9
+client108	120	-8
+client107	120	-7
+client106	120	-6
+client105	120	-5
+client104	120	-4
+client103	120	-3
+client102	120	-2
+client101	120	-1
+client100	120	100
+client99	120	99
+client98	120	98
+client97	120	97
+client96	120	96
+client95	120	95
+client94	120	94
+client93	120	93
+client92	120	92
+client91	120	91
+client90	120	90
+client89	120	89
+client88	120	88
+client87	120	87
+client86	120	86
+client85	120	85
+client84	120	84
+client83	120	83
+client82	120	82
+client81	120	81
+client80	120	80
+client79	120	79
+client78	120	78
+client77	120	77
+client76	120	76
+client75	120	75
+client74	120	74
+client73	120	73
+client72	120	72
+client71	120	71
+client70	120	70
+client69	120	69	
+client68	120	68
+client67	120	67
+client66	120	66
+client65	120	65
+client64	120	64
+client63	120	63
+client62	120	62
+client61	120	61
+client60	120	60
+client59	120	59
+client58	120	58
+client57	120	57
+client56	120	56
+client55	120	55
+client54	120	54
+client53	120	53
+client52	120	52
+client51	120	51
+client50	120	50
+client49	120	49
+client48	120	48
+client47	120	47
+client46	120	46
+client45	120	45
+client44	120	44
+client43	120	43
+client42	120	42
+client41	120	41
+client40	120	40
+client39	120	39
+client38	120	38
+client37	120	37
+client36	120	36
+client35	120	35
+client34	120	34
+client33	120	33
+client32	120	32
+client31	120	31
+client30	120	30
+client29	120	29
+client28	120	28
+client27	120	27
+client26	120	26
+client25	120	25
+client24	120	24
+client23	120	23
+client22	120	22
+client21	120	21
+client20	120	20
+client19	120	19
+client18	120	18
+client17	120	17
+client16	120	16
+client15	120	15
+client14	120	14
+client13	120	13
+client12	120	12
+client11	120	11
+client10	120	10
+client9		120	9
+client8		120	8
+client7		120	7
+client6		120	6
+client5		120	5
+client4		120	4
+client3		120	3
+client2		120	2
+client1		120	1
+cache7         40     -10
+cache6		30	-10
+cache5		20	10
+cache4		20	-10	
+cache3		15	0	
+cache2		10	0
+cache1		5	0
+originServer	0	0	
+
+link
+
+# from	    	to		capacity	metric	delay	queue
+client200	cache7		10Mbps		1	10ms	10
+client199	cache7		10Mbps		1	10ms	10
+client198	cache7		10Mbps		1	10ms	10
+client197	cache7		10Mbps		1	10ms	10
+client196	cache7		10Mbps		1	10ms	10
+client195	cache7		10Mbps		1	10ms	10
+client194	cache7		10Mbps		1	10ms	10
+client193	cache7		10Mbps		1	10ms	10
+client192	cache7		10Mbps		1	10ms	10
+client191	cache7		10Mbps		1	10ms	10
+client190	cache7		10Mbps		1	10ms	10
+client189	cache7		10Mbps		1	10ms	10
+client188	cache7		10Mbps		1	10ms	10
+client187	cache7		10Mbps		1	10ms	10
+client186	cache7		10Mbps		1	10ms	10
+client185	cache7		10Mbps		1	10ms	10
+client184	cache7		10Mbps		1	10ms	10
+client183	cache7		10Mbps		1	10ms	10
+client182	cache7		10Mbps		1	10ms	10
+client181	cache7		10Mbps		1	10ms	10
+client180	cache7		10Mbps		1	10ms	10
+client179	cache7		10Mbps		1	10ms	10
+client178	cache7		10Mbps		1	10ms	10
+client177	cache7		10Mbps		1	10ms	10
+client176	cache7		10Mbps		1	10ms	10
+client175	cache7		10Mbps		1	10ms	10
+client174	cache7		10Mbps		1	10ms	10
+client173	cache7		10Mbps		1	10ms	10
+client172	cache7		10Mbps		1	10ms	10
+client171	cache7		10Mbps		1	10ms	10
+client170	cache7		10Mbps		1	10ms	10
+client169	cache7		10Mbps		1	10ms	10
+client168	cache7		10Mbps		1	10ms	10
+client167	cache7		10Mbps		1	10ms	10
+client166	cache7		10Mbps		1	10ms	10
+client165	cache7		10Mbps		1	10ms	10
+client164	cache7		10Mbps		1	10ms	10
+client163	cache7		10Mbps		1	10ms	10
+client162	cache7		10Mbps		1	10ms	10
+client161	cache7		10Mbps		1	10ms	10
+client160	cache7		10Mbps		1	10ms	10
+client159	cache7		10Mbps		1	10ms	10
+client158	cache7		10Mbps		1	10ms	10
+client157	cache7		10Mbps		1	10ms	10
+client156	cache7		10Mbps		1	10ms	10
+client155	cache7		10Mbps		1	10ms	10
+client154	cache7		10Mbps		1	10ms	10
+client153	cache7		10Mbps		1	10ms	10
+client152	cache7		10Mbps		1	10ms	10
+client151	cache7		10Mbps		1	10ms	10
+client150	cache7		10Mbps		1	10ms	10
+client149	cache7		10Mbps		1	10ms	10
+client148	cache7		10Mbps		1	10ms	10
+client147	cache7		10Mbps		1	10ms	10
+client146	cache7		10Mbps		1	10ms	10
+client145	cache7		10Mbps		1	10ms	10
+client144	cache7		10Mbps		1	10ms	10
+client143	cache7		10Mbps		1	10ms	10
+client142	cache7		10Mbps		1	10ms	10
+client141	cache7		10Mbps		1	10ms	10
+client140	cache7		10Mbps		1	10ms	10
+client139	cache7		10Mbps		1	10ms	10
+client138	cache7		10Mbps		1	10ms	10
+client137	cache7		10Mbps		1	10ms	10
+client136	cache7		10Mbps		1	10ms	10
+client135	cache7		10Mbps		1	10ms	10
+client134	cache7		10Mbps		1	10ms	10
+client133	cache7		10Mbps		1	10ms	10
+client132	cache7		10Mbps		1	10ms	10
+client131	cache7		10Mbps		1	10ms	10
+client130	cache7		10Mbps		1	10ms	10
+client129	cache7		10Mbps		1	10ms	10
+client128	cache7		10Mbps		1	10ms	10
+client127	cache7		10Mbps		1	10ms	10
+client126	cache7		10Mbps		1	10ms	10
+client125	cache7		10Mbps		1	10ms	10
+client124	cache7		10Mbps		1	10ms	10
+client123	cache7		10Mbps		1	10ms	10
+client122	cache7		10Mbps		1	10ms	10
+client121	cache7		10Mbps		1	10ms	10
+client120	cache7		10Mbps		1	10ms	10
+client119	cache7		10Mbps		1	10ms	10
+client118	cache7		10Mbps		1	10ms	10
+client117	cache7		10Mbps		1	10ms	10
+client116	cache7		10Mbps		1	10ms	10
+client115	cache7		10Mbps		1	10ms	10
+client114	cache7		10Mbps		1	10ms	10
+client113	cache7		10Mbps		1	10ms	10
+client112	cache7		10Mbps		1	10ms	10
+client111	cache7		10Mbps		1	10ms	10
+client110	cache7		10Mbps		1	10ms	10
+client109	cache7		10Mbps		1	10ms	10
+client108	cache7		10Mbps		1	10ms	10
+client107	cache7		10Mbps		1	10ms	10
+client106	cache7		10Mbps		1	10ms	10
+client105 	cache7		10Mbps		1	10ms	10
+client104	cache7		10Mbps		1	10ms	10
+client103 	cache7		10Mbps		1	10ms	10
+client102 	cache7		10Mbps		1	10ms	10
+client101 	cache7		10Mbps		1	10ms	10
+client100	cache5		10Mbps		1	10ms	10
+client99	cache5		10Mbps		1	10ms	10
+client98	cache5		10Mbps		1	10ms	10
+client97	cache5		10Mbps		1	10ms	10
+client96	cache5		10Mbps		1	10ms	10
+client95	cache5		10Mbps		1	10ms	10
+client94	cache5		10Mbps		1	10ms	10
+client93	cache5		10Mbps		1	10ms	10
+client92	cache5		10Mbps		1	10ms	10
+client91	cache5		10Mbps		1	10ms	10
+client90	cache5		10Mbps		1	10ms	10
+client89	cache5		10Mbps		1	10ms	10
+client88	cache5		10Mbps		1	10ms	10
+client87	cache5		10Mbps		1	10ms	10
+client86	cache5		10Mbps		1	10ms	10
+client85	cache5		10Mbps		1	10ms	10
+client84	cache5		10Mbps		1	10ms	10
+client83	cache5		10Mbps		1	10ms	10
+client82	cache5		10Mbps		1	10ms	10
+client81	cache5		10Mbps		1	10ms	10
+client80	cache5		10Mbps		1	10ms	10
+client79	cache5		10Mbps		1	10ms	10
+client78	cache5		10Mbps		1	10ms	10
+client77	cache5		10Mbps		1	10ms	10
+client76	cache5		10Mbps		1	10ms	10
+client75	cache5		10Mbps		1	10ms	10
+client74	cache5		10Mbps		1	10ms	10
+client73	cache5		10Mbps		1	10ms	10
+client72	cache5		10Mbps		1	10ms	10
+client71	cache5		10Mbps		1	10ms	10
+client70	cache5		10Mbps		1	10ms	10
+client69	cache5		10Mbps		1	10ms	10
+client68	cache5		10Mbps		1	10ms	10
+client67	cache5		10Mbps		1	10ms	10
+client66	cache5		10Mbps		1	10ms	10
+client65	cache5		10Mbps		1	10ms	10
+client64	cache5		10Mbps		1	10ms	10
+client63	cache5		10Mbps		1	10ms	10
+client62	cache5		10Mbps		1	10ms	10
+client61	cache5		10Mbps		1	10ms	10
+client60	cache5		10Mbps		1	10ms	10
+client59	cache5		10Mbps		1	10ms	10
+client58	cache5		10Mbps		1	10ms	10
+client57	cache5		10Mbps		1	10ms	10
+client56	cache5		10Mbps		1	10ms	10
+client55	cache5		10Mbps		1	10ms	10
+client54	cache5		10Mbps		1	10ms	10
+client53	cache5		10Mbps		1	10ms	10
+client52	cache5		10Mbps		1	10ms	10
+client51	cache5		10Mbps		1	10ms	10
+client50	cache5		10Mbps		1	10ms	10
+client49	cache5		10Mbps		1	10ms	10
+client48	cache5		10Mbps		1	10ms	10
+client47	cache5		10Mbps		1	10ms	10
+client46	cache5		10Mbps		1	10ms	10
+client45	cache5		10Mbps		1	10ms	10
+client44	cache5		10Mbps		1	10ms	10
+client43	cache5		10Mbps		1	10ms	10
+client42	cache5		10Mbps		1	10ms	10
+client41	cache5		10Mbps		1	10ms	10
+client40	cache5		10Mbps		1	10ms	10
+client39	cache5		10Mbps		1	10ms	10
+client38	cache5		10Mbps		1	10ms	10
+client37	cache5		10Mbps		1	10ms	10
+client36	cache5		10Mbps		1	10ms	10
+client35	cache5		10Mbps		1	10ms	10
+client34	cache5		10Mbps		1	10ms	10
+client33	cache5		10Mbps		1	10ms	10
+client32	cache5		10Mbps		1	10ms	10
+client31	cache5		10Mbps		1	10ms	10
+client30	cache5		10Mbps		1	10ms	10
+client29	cache5		10Mbps		1	10ms	10
+client28	cache5		10Mbps		1	10ms	10
+client27	cache5		10Mbps		1	10ms	10
+client26	cache5		10Mbps		1	10ms	10
+client25	cache5		10Mbps		1	10ms	10
+client24	cache5		10Mbps		1	10ms	10
+client23	cache5		10Mbps		1	10ms	10
+client22	cache5		10Mbps		1	10ms	10
+client21	cache5		10Mbps		1	10ms	10
+client20	cache5		10Mbps		1	10ms	10
+client19	cache5		10Mbps		1	10ms	10
+client18	cache5		10Mbps		1	10ms	10
+client17	cache5		10Mbps		1	10ms	10
+client16	cache5		10Mbps		1	10ms	10
+client15	cache5		10Mbps		1	10ms	10
+client14	cache5		10Mbps		1	10ms	10
+client13	cache5		10Mbps		1	10ms	10
+client12	cache5		10Mbps		1	10ms	10
+client11	cache5		10Mbps		1	10ms	10
+client10	cache5		10Mbps		1	10ms	10
+client9		cache5		10Mbps		1	10ms	10
+client8		cache5		10Mbps		1	10ms	10
+client7		cache5		10Mbps		1	10ms	10
+client6		cache5		10Mbps		1	10ms	10
+client5 	cache5		10Mbps		1	10ms	10
+client4		cache5		10Mbps		1	10ms	10
+client3 	cache5		10Mbps		1	10ms	10
+client2 	cache5		10Mbps		1	10ms	10
+client1 	cache5		10Mbps		1	10ms	10
+cache7		cache6   	10Mbps		1	10ms	10
+cache6		cache4   	10Mbps		1	10ms	10
+cache5		cache3   	10Mbps		1	10ms	10
+cache4		cache3   	10Mbps		1	10ms	10
+cache3		cache2   	10Mbps		1	10ms	10
+cache2		cache1   	10Mbps		1	10ms	10
+cache1		originServer   	10Mbps		1	10ms	10
+
